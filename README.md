@@ -18,8 +18,9 @@ This is a sample System design problem statement for the CODE CRAFT 2024 event f
 
 -**Note** that the taxi only charges the customer from the pickup point to the drop point. Not the distance it travels from an adjacent point to pickup the customer. -If no taxi is free at that time, booking is rejected Design modules for: -
 
-'''
-1)    Call taxi booking 
+**1)Call taxi booking:**
+
+```
 Input 1:
 Customer ID: 1
 Pickup Point: A
@@ -39,4 +40,36 @@ Pickup Time: 9
 Output 1:
 Taxi can be allotted.
 Taxi-2 is allotted 
-'''
+```
+
+(Note: Since Taxi-1 would have completed its journey when second booking is done, so Taxi-2 from nearest point A which is free is allocated)
+
+```
+Input 3:
+Customer ID: 3
+Pickup Point: B
+Drop Point: C
+Pickup Time: 12
+. 
+Output 1:
+Taxi can be allotted.
+Taxi-1 is allotted
+```
+
+**2) Display the Taxi details**
+```
+Taxi No:    Total Earnings:
+BookingID    CustomerID    From    To    PickupTime    DropTime    Amount
+   
+Output:
+Taxi-1    Total Earnings: Rs. 400
+
+1     1     A    B    9    10    200
+3    3    B    C    12    13    200
+
+Taxi-2 Total Earnings: Rs. 350
+2    2    B    D    9    11    350
+```
+
+**NOTE:** These were just sample inputs. It should work for any and all inputs.
+
