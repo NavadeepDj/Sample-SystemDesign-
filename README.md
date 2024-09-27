@@ -17,3 +17,26 @@ This is a sample System design problem statement for the CODE CRAFT 2024 event f
 -If two taxi’s are free at the same point, one with lower earning is allocated 
 
 -**Note** that the taxi only charges the customer from the pickup point to the drop point. Not the distance it travels from an adjacent point to pickup the customer. -If no taxi is free at that time, booking is rejected Design modules for: -
+
+'''
+1)    Call taxi booking 
+Input 1:
+Customer ID: 1
+Pickup Point: A
+Drop Point: B
+Pickup Time: 9
+
+Output 1:
+Taxi can be allotted.
+Taxi-1 is allotted
+
+Input 2:
+Customer ID: 2
+Pickup Point: B
+Drop Point: D
+Pickup Time: 9
+
+Output 1:
+Taxi can be allotted.
+Taxi-2 is allotted 
+'''
